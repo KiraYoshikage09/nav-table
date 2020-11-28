@@ -370,6 +370,7 @@ a.in {
 .table b,
 .table i {
     display: table-cell;
+    font-style:normal
 }
 
 .table b,
