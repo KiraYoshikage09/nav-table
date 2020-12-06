@@ -222,41 +222,51 @@ h2 {
     border-left: none;
 }
 
-a.home {
+a.home{
     position: relative;
     padding-left: 60px;
 }
-
-.home:before {
+.home:before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 13px;
-    background: url(../img/sprite.png) no-repeat -51px -2px;
+    width: 24px;
+    height: 18px;
+    background: url(img/sprite.png) no-repeat -47px 0;
     left: 30px;
     top: 17px;
     transition: all .5s ease;
 }
+.home:hover:before{
+    background-position: -47px -18px;
+}
 
-.home.hover:before {
-    background-position: -51px -20px;
-
+.sub-right{
+    width: 210px;
+    height: 197px;
+    position: absolute;
+    border: #d2d4d5 1px solid;
+    right: -210px;
+    top: 4px;
+    border-left: 1px solid #b9bdc1;
+}
+.sub-right li:last-child{
+    border-bottom: 1px solid #b9bdc1;
 }
 
 .social {
     float: right;
-    padding: 15px 17px;
+    padding: 15px 30px;
 }
 
 .social a {
     display: block;
-    background: url(../img/sprite.png) no-repeat;
+    background: url(../img/sprite.png);
     transition: all .5s ease;
 }
 
 .social li {
     display: inline-block;
-    padding: 0 13px;
+    padding-left: 26px; 
 }
 
 a.fb {
